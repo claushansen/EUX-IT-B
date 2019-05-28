@@ -20,8 +20,75 @@
              mollitia iusto consectetur tempore doloribus.</p>
 
         <!--a tag er links og attributten href fortæller hvad der linkes til-->    
-        <p>Lorem ipsum, dolor sit amet <a href="http://google.com">consectetur</a> 
+        <p>Lorem ipsum, dolor sit amet <a href="http://google.com" target="_blank">consectetur</a> 
             adipisicing elit. In aperiam adipisci provident quas error illum 
             mollitia iusto consectetur tempore doloribus.</p>
+            <!--Lister-->
+            <!--u-nummererede Liste-->
+        <ul>
+            <li>claus</li>
+            <li>Pia</li>
+            <li>Jasper</li>
+        </ul>
+        <!--Nummererede lister-->
+        <ol>
+            <li>claus</li>
+            <li>Pia</li>
+            <li>Jasper</li>
+        </ol>
+
+        <!--Tabeller-->
+        <table>
+            <thead>
+                <tr>
+                    <th>fornavn</th>
+                    <th>efternavn</th>
+                    <th>alder</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pia</td>
+                    <td>Hansen</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>kim</td>
+                    <td>jensen</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Claus</td>
+                    <td>Hansen</td>
+                    <td>49</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <!--IMG tag (Billede)-->
+        <!--attributten src fortæller hvilket billede vi vil have vist(stien til billedet).alt attributten er det der bliver vist hvis ikke billedet kan findes, eller læses af skærmlæsere, fx. for svagtseende. -->
+        <img src="blomst.jpg" alt="Min smukke blomst" style="width: 300px;" >
+
+        <!--Forms(formularer)-->
+        <!--attributten action fortæller hvor data skal sendes hen og method attributten lader os vælge metoden som data skal sendes med:GET eller POST-->
+        <form action="proccess.php" method="POST">
+            <!--da input tags er inline elements, wrapper vi dem i div tags, så vi får dem til at stå ovenover hinanden. Da div tags jo er block elements, så de fylder hele den tilgængelige plads-->
+
+            <!--input type text-->
+            <div>
+                <label>Fornavn</label>
+                <input type="text" name="firstName">
+            </div>
+            <br>
+            <div>
+                <label>Efternavn</label>
+                <input type="text" name="lastName">
+            </div>
+
+        </form>
+
+        <!--dette div tag er her kun for at vi kan scrolle til midten af siden.-->
+        <div style="margin-top:500px;"></div>
     </body>
 </html>
