@@ -1,94 +1,147 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>HTML Cheat Sheet</title>
-    </head>
-    <body>
-        <!--Overskrifter(headings)-->
-        <!--h1 er størst og vigtigst-->
-        <h1>Overskrift 1</h1>
-        <h2>Overskrift 2</h2>
-        <h3>Overskrift 3</h3>
-        <h4>Overskrift 4</h4>
-        <h5>Overskrift 5</h5>
-        <h6>Overskrift 6</h6>
 
-        <!--Paragraphs(tekstafsnit)-->
-        <!--strong tag gør teksten fed og em skråstiller teksten-->
-        <p>Lorem ipsum, <strong>color sit amet consectetur</strong> adipisicing
-             elit. <em>In aperiam adipisci provident</em> quas error illum 
-             mollitia iusto consectetur tempore doloribus.</p>
+<head>
+    <title>HTML Cheat Sheet</title>
+</head>
 
-        <!--a tag er links og attributten href fortæller hvad der linkes til-->    
-        <p>Lorem ipsum, dolor sit amet <a href="http://google.com" target="_blank">consectetur</a> 
-            adipisicing elit. In aperiam adipisci provident quas error illum 
-            mollitia iusto consectetur tempore doloribus.</p>
-            <!--Lister-->
-            <!--u-nummererede Liste-->
-        <ul>
-            <li>claus</li>
-            <li>Pia</li>
-            <li>Jasper</li>
-        </ul>
-        <!--Nummererede lister-->
-        <ol>
-            <li>claus</li>
-            <li>Pia</li>
-            <li>Jasper</li>
-        </ol>
+<body>
+    <!--Overskrifter(headings)-->
+    <!--h1 er størst og vigtigst-->
+    <h1>Overskrift 1</h1>
+    <h2>Overskrift 2</h2>
+    <h3>Overskrift 3</h3>
+    <h4>Overskrift 4</h4>
+    <h5>Overskrift 5</h5>
+    <h6>Overskrift 6</h6>
 
-        <!--Tabeller-->
-        <table>
-            <thead>
-                <tr>
-                    <th>fornavn</th>
-                    <th>efternavn</th>
-                    <th>alder</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Pia</td>
-                    <td>Hansen</td>
-                    <td>27</td>
-                </tr>
-                <tr>
-                    <td>kim</td>
-                    <td>jensen</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>Claus</td>
-                    <td>Hansen</td>
-                    <td>49</td>
-                </tr>
+    <!--Paragraphs(tekstafsnit)-->
+    <!--strong tag gør teksten fed og em skråstiller teksten-->
+    <p>Lorem ipsum, <strong>color sit amet consectetur</strong> adipisicing
+        elit. <em>In aperiam adipisci provident</em> quas error illum
+        mollitia iusto consectetur tempore doloribus.</p>
 
-            </tbody>
-        </table>
+    <!--a tag er links og attributten href fortæller hvad der linkes til-->
+    <p>Lorem ipsum, dolor sit amet <a href="http://google.com" target="_blank">consectetur</a>
+        adipisicing elit. In aperiam adipisci provident quas error illum
+        mollitia iusto consectetur tempore doloribus.</p>
+    <!--Lister-->
+    <!--u-nummererede Liste-->
+    <ul>
+        <li>claus</li>
+        <li>Pia</li>
+        <li>Jasper</li>
+    </ul>
+    <!--Nummererede lister-->
+    <ol>
+        <li>claus</li>
+        <li>Pia</li>
+        <li>Jasper</li>
+    </ol>
 
-        <!--IMG tag (Billede)-->
-        <!--attributten src fortæller hvilket billede vi vil have vist(stien til billedet).alt attributten er det der bliver vist hvis ikke billedet kan findes, eller læses af skærmlæsere, fx. for svagtseende. -->
-        <img src="blomst.jpg" alt="Min smukke blomst" style="width: 300px;" >
+    <!--Tabeller-->
+    <table>
+        <thead>
+            <tr>
+                <th>fornavn</th>
+                <th>efternavn</th>
+                <th>alder</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pia</td>
+                <td>Hansen</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>kim</td>
+                <td>jensen</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Claus</td>
+                <td>Hansen</td>
+                <td>49</td>
+            </tr>
 
-        <!--Forms(formularer)-->
-        <!--attributten action fortæller hvor data skal sendes hen og method attributten lader os vælge metoden som data skal sendes med:GET eller POST-->
-        <form action="proccess.php" method="POST">
-            <!--da input tags er inline elements, wrapper vi dem i div tags, så vi får dem til at stå ovenover hinanden. Da div tags jo er block elements, så de fylder hele den tilgængelige plads-->
+        </tbody>
+    </table>
 
-            <!--input type text-->
-            <div>
-                <label>Fornavn</label>
-                <input type="text" name="firstName">
-            </div>
-            <br>
-            <div>
-                <label>Efternavn</label>
-                <input type="text" name="lastName">
-            </div>
+    <!--IMG tag (Billede)-->
+    <!--attributten src fortæller hvilket billede vi vil have vist(stien til billedet).
+        alt attributten er det der bliver vist hvis ikke billedet kan findes, eller læses af skærmlæsere, fx. for svagtseende. -->
+    <a href="images/blomst.jpg">
+        <img src="images/blomst.jpg" alt="Min smukke blomst" style="width: 300px;">
+    </a>
+    <br>
+    <hr>
+    <!--Forms(formularer)-->
+    <!--attributten action fortæller hvor data skal sendes hen og method attributten lader os vælge metoden som data skal sendes med:GET eller POST-->
+    <form action="index.html" method="POST">
+        <!--da input tags er inline elements, wrapper vi dem i div tags, så vi får dem til at stå ovenover hinanden. 
+            Da div tags jo er block elements, så de fylder hele den tilgængelige plads-->
 
-        </form>
+        <!--input type text-->
+        <div>
+            <label>Fornavn</label>
+            <input type="text" name="firstName" placeholder="Her skal du skrive navn">
+        </div>
+        <br>
+        <div>
+            <label>Efternavn</label>
+            <input type="text" name="lastName">
+        </div>
+        <br>
+        <!--input type radio-->
+        <div>
+            <label>Mand</label>
+            <input type="radio" name="koen" value="mand">
+            <label>Kvinde</label>
+            <input type="radio" name="koen" value="kvinde">
+        </div>
+        <br>
+        <!--selectbox-->
+        <div>
+            <label>Kæledyr</label>
+            <select name="pets" id="">
+                <option value="hund">Hund</option>
+                <option value="kat">Kat</option>
+                <option value="kanariefugl">Fugl</option>
+            </select>
+        </div>
+        <br>
 
-        <!--dette div tag er her kun for at vi kan scrolle til midten af siden.-->
-        <div style="margin-top:500px;"></div>
-    </body>
+        <!-- input type email-->
+        <div>
+            <label for="emailinput">email</label>
+            <input type="email" id="emailinput">
+        </div>
+        <br>
+
+        <!-- input type url-->
+        <div>
+            <label for="urlinput">Din hjemmeside</label>
+            <input type="url" name="website" id="urlinput">
+        </div>
+        <br>
+        <div>
+            <label>nyhedsbrev</label>
+            <input type="checkbox" name="nyhedsbrev" id="" value="ja">
+        </div>
+        <br>
+        <div>
+            <textarea name="besked" style="width: 200px; height: 200px;">
+
+            </textarea>
+        </div>
+
+        <!--input type submit(sender formularen)-->
+        <input type="submit" value="Send mig">
+    </form>
+
+    <!--dette div tag er her kun for at vi kan scrolle til midten af siden.-->
+    <div style="margin-top:500px;"></div>
+</body>
+
 </html>
