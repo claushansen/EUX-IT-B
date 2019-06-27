@@ -1,0 +1,16 @@
+header {
+    background-color:blue;
+    background-image: url('../images/header.jpg');
+    padding:100px;
+    text-align: center;
+    color:#fff;
+}
+/* styling af id starter med # */
+#minoverskrift{
+    color:yellow;
+}
+/*styling af class starter med punktum*/
+.menulink{
+    text-decoration: none;
+    color:pink;
+}
